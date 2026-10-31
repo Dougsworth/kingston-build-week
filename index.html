@@ -49,6 +49,7 @@
       <canvas id="harbour" class="hero__canvas"></canvas>
       <p class="hero__pin" id="hero-pin">The Waterfront Hall</p>
       <p class="hero__harbour" id="hero-harbour">Kingston Harbour</p>
+      <p class="hero__town" id="hero-town"></p>
     </div>
     <div class="wrap hero__content">
       <h1 class="hero__title" id="hero-title"><span class="hero__line">Kingston</span><span class="hero__line">Build Week</span><span class="hero__line hero__line--year">2027</span></h1>
@@ -57,7 +58,7 @@
         <p class="hero__intro">Two days for the people building the Caribbean's software, products and companies.</p>
         <div class="hero__action">
           <a class="btn btn--gold" href="#register">Register for J$24,000</a>
-          <p class="hero__hint" id="hero-hint">Move across the map to light the routes to the hall</p>
+          <p class="hero__hint" id="hero-hint">Hover a town, or the streets, to see the way in</p>
         </div>
       </div>
     </div>
@@ -67,10 +68,24 @@
     <div class="wrap row">
       <h2 class="section__title" id="about-title">Why we gather</h2>
       <div class="section__body">
-        <p class="lede">The region has more builders than it has rooms for them. Kingston Build Week is that room. Two days by the harbour where engineers, designers and founders from across the Caribbean compare notes, argue about architecture and leave with people they will ship with.</p>
-        <div class="cols">
-          <p>No sales pitches from the stage. Every talk is about something the speaker built, broke or rebuilt here, with the numbers to prove it.</p>
-          <p>Workshops are small and hands on. Bring a laptop, leave with working code, a sharper product plan or a cap table you finally understand.</p>
+        <p class="lede manifesto" id="manifesto" data-reveal>The region has <mark>more builders than it has rooms</mark> for them. Kingston Build Week is that room. Two days by the harbour where engineers, designers and founders from across the Caribbean compare notes, argue about architecture and leave with <mark>people they will ship with</mark>.</p>
+        <div class="proof">
+          <div class="proof__item">
+            <h3 class="proof__title">Talks with receipts</h3>
+            <p>No sales pitches from the stage. Every talk is about something the speaker built, broke or rebuilt here, with the numbers to prove it.</p>
+            <div class="term" aria-hidden="true">
+              <p class="term__bar"><span>coralbase / deploy</span><span class="term__clock" id="term-clock">00:00</span></p>
+              <pre class="term__body" id="term-body"></pre>
+            </div>
+          </div>
+          <div class="proof__item">
+            <h3 class="proof__title">Leave with working code</h3>
+            <p>Workshops are small and hands on. Bring a laptop, leave with working code, a sharper product plan or a cap table you finally understand.</p>
+            <figure class="graph" aria-hidden="true">
+              <svg class="graph__svg" id="graph" viewBox="0 0 320 168"></svg>
+              <figcaption class="graph__cap"><span id="graph-count">0</span> commits in the Pier Studio last year</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </div>
@@ -80,7 +95,7 @@
     <div class="wrap">
       <h2 class="sr" id="stats-title">Build Week in numbers</h2>
       <p class="stats__line"><strong data-count="1200">1,200</strong> builders, <strong data-count="48">48</strong> speakers from eleven countries and <strong data-count="24">24</strong> workshops, across two days by the harbour.</p>
-      <p class="stats__note">Last year we sold out in nine weeks. This year the hall is bigger and the student allocation has doubled.</p>
+      <p class="stats__note" data-reveal>Last year we sold out in nine weeks. This year the hall is bigger and the student allocation has doubled.</p>
     </div>
   </section>
 
@@ -210,7 +225,7 @@
         </figure>
         <div class="venue__info">
           <h3 class="venue__name">The Waterfront Hall</h3>
-          <p>A restored 1930s shipping warehouse on Ocean Boulevard, with the harbour on one side and the Parade two blocks north. Four rooms, one long terrace and the best sunset in town for the closing night.</p>
+          <p class="venue__lede" data-reveal>A restored 1930s shipping warehouse on Ocean Boulevard, with the harbour on one side and the Parade two blocks north. Four rooms, one long terrace and <mark>the best sunset in town</mark> for the closing night.</p>
           <dl class="facts">
             <div><dt>Address</dt><dd>14 Ocean Boulevard, Kingston</dd></div>
             <div><dt>Rooms</dt><dd>Main Hall, Harbour Room, Gallery, Pier Studio</dd></div>
@@ -378,6 +393,7 @@
 </footer>
 
 <script src="assets/vendor/leaflet/leaflet.js" defer></script>
+<script src="assets/js/jamaica.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/map.js" defer></script>
 </body>
