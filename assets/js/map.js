@@ -19,7 +19,7 @@
   function build() {
     fig.classList.add("has-map");
 
-    var VENUE = [17.9663, -76.7928];
+    var VENUE = [17.9650, -76.7928];
     var AIRPORT = [17.9357, -76.7875];
     var POINTS = [
       { k: "venue", n: "1", name: "The Waterfront Hall", note: "14 Ocean Boulevard. Doors open at 08:00 both days. Registration is in the lobby facing the harbour.", at: VENUE },
@@ -55,7 +55,7 @@
     function popup(p) {
       var html = '<div class="kbw-pop"><h3>' + p.name + "</h3><p>" + p.note + "</p>";
       if (p.k !== "venue") html += '<p class="kbw-pop__walk">About ' + walk(VENUE, p.at) + " min walk from the hall</p>";
-      else html += '<p class="kbw-pop__walk"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=17.9663,-76.7928&amp;travelmode=driving" target="_blank" rel="noopener">Directions in Google Maps</a></p>';
+      else html += '<p class="kbw-pop__walk"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=17.9650,-76.7928&amp;travelmode=driving" target="_blank" rel="noopener">Directions in Google Maps</a></p>';
       return html + "</div>";
     }
 
