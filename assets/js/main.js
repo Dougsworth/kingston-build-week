@@ -40,18 +40,18 @@
 
   /* Data */
   var speakers = [
-    { id: "ab", name: "Anika Bramwell", role: "Head of Product, Lignum Pay", bio: "Anika runs product at Lignum Pay, where her team moved forty thousand market vendors from cash to phone payments in eighteen months. Before that she built lending tools for credit unions in Montego Bay. She will talk about designing for people who have every reason not to trust your app." },
-    { id: "dc", name: "Desmond Chin", role: "Principal Engineer, Coralbase", bio: "Desmond leads the platform team at Coralbase, a database company built for patchy networks. He has spent ten years making software that keeps working when the power and the internet do not. Ask him about offline sync and he will happily miss lunch." },
-    { id: "rm", name: "Renée Morrison", role: "Founder, Tallawah", bio: "Renée started Tallawah from a spare room in Mandeville to help small farmers sell straight to hotels. It now works with nine hundred growers across three islands. She is honest about the two years it nearly failed and what changed." },
-    { id: "kl", name: "Kwame Lindo", role: "Staff Engineer, Quay", bio: "Kwame builds the shipping and customs tools at Quay that clear containers at Kingston port in hours instead of days. He is a maintainer of two open source logistics libraries and teaches a free evening class on systems design in Half Way Tree." },
-    { id: "sp", name: "Sasha Persaud", role: "Design Director, Blue Mahoe Labs", bio: "Sasha moved home to Georgetown after a decade designing banking apps in Toronto. At Blue Mahoe Labs she leads a studio of twelve designers working with governments across the region on public services people actually enjoy using." },
-    { id: "tg", name: "Tevin Grant", role: "CTO, Ledgerline", bio: "Tevin is cofounder and CTO of Ledgerline, accounting software for Caribbean small businesses that understands GCT, NIS and four currencies. He hired his first ten engineers straight out of UTech and still does code review every morning." },
-    { id: "nj", name: "Nadine Joseph", role: "Partner, Seagrape Ventures", bio: "Nadine invests in early stage companies from Trinidad, Jamaica and Barbados and has backed twenty two of them so far. She was an engineer first and still reads the codebase before she reads the deck." },
-    { id: "mf", name: "Marlon Francis", role: "Robotics Lead, Portmore Robotics", bio: "Marlon builds low cost sorting robots for agro processors, assembled in Portmore from mostly local parts. He will bring one on stage and probably take it apart." },
-    { id: "ib", name: "Imani Baptiste", role: "Product Manager, Coralbase", bio: "Imani came to product from customer support and still answers tickets every Friday. She leads pricing and growth at Coralbase and writes a popular newsletter on selling software to Caribbean businesses." },
-    { id: "jr", name: "Jordan Reid", role: "Machine Learning Engineer, Quay", bio: "Jordan trains the models that read shipping manifests, bills of lading and handwritten customs forms at Quay. He is careful about where machine learning helps and loud about where it does not." },
-    { id: "cw", name: "Celia Wong", role: "Founder, Kitchen Ledger", bio: "Celia built Kitchen Ledger after running her family's restaurant in Port of Spain for six years. The app now handles stock and payroll for three hundred restaurants. She bootstrapped to profit and has opinions about it." },
-    { id: "oh", name: "Omari Henry", role: "Security Engineer, Lignum Pay", bio: "Omari keeps Lignum Pay's money moving safely and runs the region's largest security meetup. His talk walks through a real incident, minute by minute, with the logs on screen." }
+    { id: "ab", photo: "1636144896336-b056be4a8dfe", name: "Anika Bramwell", role: "Head of Product, Lignum Pay", bio: "Anika runs product at Lignum Pay, where her team moved forty thousand market vendors from cash to phone payments in eighteen months. Before that she built lending tools for credit unions in Montego Bay. She will talk about designing for people who have every reason not to trust your app." },
+    { id: "dc", photo: "1622124549569-734d5a66859d", name: "Desmond Clarke", role: "Principal Engineer, Coralbase", bio: "Desmond leads the platform team at Coralbase, a database company built for patchy networks. He has spent ten years making software that keeps working when the power and the internet do not. Ask him about offline sync and he will happily miss lunch." },
+    { id: "rm", photo: "1625367581235-96f8dd1a0a8b", name: "Renée Morrison", role: "Founder, Tallawah", bio: "Renée started Tallawah from a spare room in Mandeville to help small farmers sell straight to hotels. It now works with nine hundred growers across three islands. She is honest about the two years it nearly failed and what changed." },
+    { id: "kl", photo: "1769636929354-59165ba73c7e", name: "Kwame Lindo", role: "Staff Engineer, Quay", bio: "Kwame builds the shipping and customs tools at Quay that clear containers at Kingston port in hours instead of days. He is a maintainer of two open source logistics libraries and teaches a free evening class on systems design in Half Way Tree." },
+    { id: "sp", photo: "1769636929388-99eff95d3bf1", name: "Sasha Pinnock", role: "Design Director, Blue Mahoe Labs", bio: "Sasha moved home to Georgetown after a decade designing banking apps in Toronto. At Blue Mahoe Labs she leads a studio of twelve designers working with governments across the region on public services people actually enjoy using." },
+    { id: "tg", photo: "1642257859842-c95f9fa8121d", name: "Tevin Grant", role: "CTO, Ledgerline", bio: "Tevin is cofounder and CTO of Ledgerline, accounting software for Caribbean small businesses that understands GCT, NIS and four currencies. He hired his first ten engineers straight out of UTech and still does code review every morning." },
+    { id: "nj", photo: "1665296780632-95c2410e31c5", name: "Nadine Joseph", role: "Partner, Seagrape Ventures", bio: "Nadine invests in early stage companies from Trinidad, Jamaica and Barbados and has backed twenty two of them so far. She was an engineer first and still reads the codebase before she reads the deck." },
+    { id: "mf", photo: "1565884280295-98eb83e41c65", name: "Marlon Francis", role: "Robotics Lead, Portmore Robotics", bio: "Marlon builds low cost sorting robots for agro processors, assembled in Portmore from mostly local parts. He will bring one on stage and probably take it apart." },
+    { id: "ib", photo: "1523297736436-356615162cc8", name: "Imani Baptiste", role: "Product Manager, Coralbase", bio: "Imani came to product from customer support and still answers tickets every Friday. She leads pricing and growth at Coralbase and writes a popular newsletter on selling software to Caribbean businesses." },
+    { id: "jr", photo: "1767821853493-cf1aacf60010", name: "Jordan Reid", role: "Machine Learning Engineer, Quay", bio: "Jordan trains the models that read shipping manifests, bills of lading and handwritten customs forms at Quay. He is careful about where machine learning helps and loud about where it does not." },
+    { id: "cw", photo: "1665296780585-c78c702f00d6", name: "Celia Whyte", role: "Founder, Kitchen Ledger", bio: "Celia built Kitchen Ledger after running her family's restaurant in Port of Spain for six years. The app now handles stock and payroll for three hundred restaurants. She bootstrapped to profit and has opinions about it." },
+    { id: "oh", photo: "1596529257881-85dfcdc8f880", name: "Omari Henry", role: "Security Engineer, Lignum Pay", bio: "Omari keeps Lignum Pay's money moving safely and runs the region's largest security meetup. His talk walks through a real incident, minute by minute, with the logs on screen." }
   ];
   var spk = {};
   speakers.forEach(function (s) { spk[s.id] = s; });
@@ -108,8 +108,43 @@
 
   function speakerLinks(ids) {
     return ids.map(function (id) {
-      return '<button type="button" data-speaker="' + id + '">' + spk[id].name + "</button>";
+      return '<button type="button" data-speaker="' + id + '"><img class="face" src="' + photoUrl(spk[id], 96, 96) + '" alt="" width="24" height="24" loading="lazy" decoding="async">' + spk[id].name + "</button>";
     }).join(ids.length > 2 ? ", " : " and ").replace(/, (?=[^,]*$)/, " and ");
+  }
+
+  /* Departures board: the time column flips like split flap letters when the day changes */
+  var flipNext = false, flipRaf = 0;
+  function board(t) {
+    return '<b class="board" data-v="' + t + '">' + t.split("").map(function (c) {
+      return c === ":" ? '<i class="board__sep">:</i>' : '<i class="board__c">' + c + "</i>";
+    }).join("") + "</b>";
+  }
+  function flipBoard(root) {
+    if (reduceMotion) return;
+    cancelAnimationFrame(flipRaf);
+    var cells = Array.prototype.slice.call(root.querySelectorAll(".board__c")).slice(0, 160);
+    var jobs = cells.map(function (c, i) {
+      var row = Math.floor(i / 4);
+      return { c: c, fin: c.textContent, delay: row * 26 + (i % 4) * 40, steps: 4 + (i % 4) + Math.floor(Math.random() * 3), last: -1 };
+    });
+    var TICK = 70, t0 = performance.now();
+    function frame(now) {
+      var busy = false;
+      for (var j = 0; j < jobs.length; j++) {
+        var job = jobs[j], e = now - t0 - job.delay;
+        if (e < 0) { busy = true; continue; }
+        var k = Math.floor(e / TICK), frac = (e % TICK) / TICK;
+        if (k >= job.steps) {
+          if (job.last !== job.steps) { job.c.textContent = job.fin; job.c.style.transform = ""; job.last = job.steps; }
+          continue;
+        }
+        busy = true;
+        if (k !== job.last) { job.c.textContent = String((+job.fin + k * 3 + 7) % 10); job.last = k; }
+        job.c.style.transform = "perspective(120px) rotateX(" + Math.round((1 - frac) * 70) + "deg)";
+      }
+      if (busy) flipRaf = requestAnimationFrame(frame);
+    }
+    flipRaf = requestAnimationFrame(frame);
   }
 
   function renderAgenda() {
@@ -130,11 +165,11 @@
       var li;
       if (s.brk) {
         li = el("li", { class: "session session--break" },
-          '<p class="session__time">' + s.t + "</p><p class=\"session__title\">" + s.title + "</p>");
+          '<p class="session__time">' + board(s.t) + "</p><p class=\"session__title\">" + s.title + "</p>");
       } else {
         var on = state.saved.indexOf(s.id) > -1;
         li = el("li", { class: "session" },
-          '<p class="session__time">' + s.t + "<span>" + s.e + "</span></p>" +
+          '<p class="session__time">' + board(s.t) + "<span>" + board(s.e) + "</span></p>" +
           '<div class="session__main"><h3 class="session__title">' + s.title + "</h3>" +
           '<p class="session__who">' + speakerLinks(s.sp) + "</p></div>" +
           '<div class="session__side"><span class="session__track">' + trackGlyph[s.track] + s.track + "</span><span>" + s.room + "</span>" +
@@ -145,6 +180,7 @@
       list.appendChild(li);
     });
     countEl.textContent = state.saved.length;
+    if (flipNext) { flipNext = false; flipBoard(list); }
     filtersWrap.classList.toggle("is-disabled", mine);
     filters.forEach(function (f) { f.disabled = mine; });
   }
@@ -156,6 +192,7 @@
       t.tabIndex = on ? 0 : -1;
     });
     panel.setAttribute("aria-labelledby", tab.id);
+    if (state.day !== tab.dataset.day) flipNext = true;
     state.day = tab.dataset.day;
     if (focus) tab.focus();
     renderAgenda();
@@ -193,45 +230,23 @@
   });
   renderAgenda();
 
-  /* Portraits: generated line drawings */
-  function portrait(s, withInitials) {
-    var r = rng(s.id + s.name);
-    var w = 200, h = 250;
-    var svg = svgEl("svg", { viewBox: "0 0 " + w + " " + h, "aria-hidden": "true", preserveAspectRatio: "xMidYMid slice" });
-    var cid = "c" + s.id + Math.floor(r() * 1e6);
-    var defs = svgEl("defs", {});
-    var clip = svgEl("clipPath", { id: cid });
-    var hx = 82 + r() * 40, hy = 86 + r() * 16, hr = 40 + r() * 8;
-    clip.appendChild(svgEl("circle", { cx: hx, cy: hy, r: hr }));
-    var sw = 70 + r() * 20;
-    clip.appendChild(svgEl("path", { d: "M" + (hx - sw) + " " + h + " C" + (hx - sw) + " " + (hy + hr + 30) + " " + (hx + sw) + " " + (hy + hr + 30) + " " + (hx + sw) + " " + h + "Z" }));
-    defs.appendChild(clip);
-    svg.appendChild(defs);
-
-    var mode = Math.floor(r() * 3);
-    var accent = svgEl("g", { class: "pr-shift" });
-    var ax = 20 + r() * 140, ay = 20 + r() * 90;
-    if (mode === 0) accent.appendChild(svgEl("circle", { cx: ax, cy: ay, r: 22 + r() * 18, fill: "#F2B233" }));
-    else if (mode === 1) accent.appendChild(svgEl("rect", { x: ax, y: ay, width: 26 + r() * 30, height: 26 + r() * 30, fill: "#F2B233" }));
-    else accent.appendChild(svgEl("path", { d: "M0 " + (ay + 60) + " L" + w + " " + (ay - 10) + " L" + w + " " + (ay + 8) + " L0 " + (ay + 78) + "Z", fill: "#F2B233" }));
-    svg.appendChild(accent);
-
-    var g = svgEl("g", { "clip-path": "url(#" + cid + ")", stroke: "#EDEEE8", fill: "none" });
-    var vertical = r() > 0.5;
-    var gap = 4 + Math.floor(r() * 3);
-    var tilt = (r() - 0.5) * 30;
-    for (var i = -h; i < h * 2; i += gap) {
-      var d = vertical ? "M" + i + " 0 L" + (i + tilt) + " " + h : "M0 " + i + " L" + w + " " + (i + tilt);
-      g.appendChild(svgEl("path", { d: d, "stroke-width": 1.1 }));
-    }
-    svg.appendChild(g);
-    svg.appendChild(svgEl("circle", { cx: hx, cy: hy, r: hr, stroke: "#EDEEE8", "stroke-width": 1.4, fill: "none" }));
+  /* Portraits: real photographs, one uniform crop and grade */
+  function photoUrl(s, w, h) {
+    return "https://images.unsplash.com/photo-" + s.photo + "?auto=format&fit=crop&w=" + w + "&h=" + h + "&q=80&crop=faces";
+  }
+  function portrait(s, size) {
+    var big = size === "large";
     var wrap = el("div", { class: "portrait" });
-    wrap.appendChild(svg);
-    if (withInitials) {
-      var parts = s.name.split(" ");
-      wrap.appendChild(el("span", { class: "portrait__init", "aria-hidden": "true" }, parts[0][0] + parts[parts.length - 1][0]));
-    }
+    var img = el("img", {
+      src: photoUrl(s, big ? 640 : 480, big ? 800 : 600),
+      srcset: photoUrl(s, 480, 600) + " 480w, " + photoUrl(s, 800, 1000) + " 800w",
+      sizes: big ? "200px" : "(max-width: 640px) 50vw, (max-width: 1100px) 30vw, 300px",
+      alt: big ? "Portrait of " + s.name : "",
+      width: "800", height: "1000",
+      loading: big ? "eager" : "lazy", decoding: "async"
+    });
+    img.addEventListener("error", function () { wrap.classList.add("is-missing"); });
+    wrap.appendChild(img);
     return wrap;
   }
 
@@ -240,7 +255,7 @@
   speakers.forEach(function (s) {
     var li = el("li", { class: "speaker" });
     var b = el("button", { type: "button", "aria-haspopup": "dialog", "data-speaker": s.id });
-    b.appendChild(portrait(s, true));
+    b.appendChild(portrait(s));
     b.appendChild(el("span", { class: "speaker__name" }, s.name));
     b.appendChild(el("span", { class: "speaker__role", style: "display:block" }, s.role));
     li.appendChild(b);
@@ -250,6 +265,41 @@
     var b = e.target.closest("[data-speaker]");
     if (b) openSpeaker(b.dataset.speaker, b);
   });
+
+  /* Portraits print in, line by line, as they enter view */
+  var cards = Array.prototype.slice.call(grid.querySelectorAll(".portrait"));
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    grid.classList.add("will-print");
+    var pio = new IntersectionObserver(function (entries) {
+      var batch = entries.filter(function (en) { return en.isIntersecting; });
+      batch.forEach(function (en, i) {
+        pio.unobserve(en.target);
+        en.target.style.setProperty("--print-delay", (i * 110) + "ms");
+        en.target.classList.add("is-printed");
+      });
+    }, { threshold: 0.25 });
+    cards.forEach(function (c) { pio.observe(c); });
+  }
+
+  /* and lean a few degrees toward the cursor */
+  if (!reduceMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    var tiltEl = null, tx = 0, ty = 0, tiltRaf = 0;
+    function applyTilt() {
+      tiltRaf = 0;
+      if (tiltEl) tiltEl.style.transform = "perspective(700px) rotateX(" + (-ty * 5).toFixed(2) + "deg) rotateY(" + (tx * 6).toFixed(2) + "deg)";
+    }
+    grid.addEventListener("pointermove", function (e) {
+      var p = e.target.closest(".portrait");
+      if (p !== tiltEl && tiltEl) tiltEl.style.transform = "";
+      tiltEl = p;
+      if (!p) return;
+      var r = p.getBoundingClientRect();
+      tx = (e.clientX - r.left) / r.width - 0.5;
+      ty = (e.clientY - r.top) / r.height - 0.5;
+      if (!tiltRaf) tiltRaf = requestAnimationFrame(applyTilt);
+    });
+    grid.addEventListener("pointerleave", function () { if (tiltEl) tiltEl.style.transform = ""; tiltEl = null; });
+  }
 
   var sheet = document.getElementById("speaker-sheet");
   var lastTrigger = null;
@@ -261,7 +311,7 @@
     document.getElementById("sheet-bio").textContent = s.bio;
     var p = document.getElementById("sheet-portrait");
     p.innerHTML = "";
-    p.appendChild(portrait(s, true));
+    p.appendChild(portrait(s, "large"));
     var ul = document.getElementById("sheet-sessions");
     ul.innerHTML = "";
     Object.keys(allSessions).forEach(function (k) {
@@ -751,25 +801,38 @@
     if (e.target.closest("a")) { toggle.setAttribute("aria-expanded", "false"); links.classList.remove("is-open"); }
   });
 
-  /* Stat counters */
+  /* Stat counters, rolling like an odometer */
   var nums = document.querySelectorAll("[data-count]");
+  var strip = "";
+  for (var sd = 0; sd < 20; sd++) strip += "<i>" + (sd % 10) + "</i>";
+  Array.prototype.forEach.call(nums, function (n) {
+    var txt = (+n.dataset.count).toLocaleString("en-US");
+    n.setAttribute("aria-label", txt);
+    n.classList.add("odo");
+    n.innerHTML = txt.split("").map(function (c) {
+      return /\d/.test(c) ? '<span class="odo__d" aria-hidden="true" data-d="' + c + '"><span class="odo__s">' + strip + "</span></span>" : '<span aria-hidden="true">' + c + "</span>";
+    }).join("");
+  });
+  function rollAll(root) {
+    var ds = root.querySelectorAll(".odo__d");
+    Array.prototype.forEach.call(ds, function (d, i) {
+      var s = d.firstChild;
+      s.style.transitionDelay = reduceMotion ? "0s" : (i * 90) + "ms";
+      s.style.transform = "translateY(" + (-(10 + +d.dataset.d) * 5) + "%)";
+    });
+  }
   if (!reduceMotion && "IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
         io.unobserve(en.target);
-        var end = +en.target.dataset.count, t0 = null;
-        var step = function (ts) {
-          if (!t0) t0 = ts;
-          var p = Math.min((ts - t0) / 1400, 1);
-          var v = Math.round(end * (1 - Math.pow(1 - p, 4)));
-          en.target.textContent = v.toLocaleString("en-US");
-          if (p < 1) requestAnimationFrame(step);
-        };
-        requestAnimationFrame(step);
+        requestAnimationFrame(function () { rollAll(en.target); });
       });
-    }, { threshold: 0.5 });
-    nums.forEach(function (n) { io.observe(n); });
+    }, { threshold: 0.6 });
+    io.observe(document.querySelector(".stats__line"));
+  } else {
+    doc.classList.add("odo-static");
+    rollAll(document);
   }
 
   /* FAQ, one open at a time */
@@ -823,13 +886,16 @@
     function reserved(x, y) {
       return (x < 8 && y < 8) || (x > n - 9 && y < 8) || (x < 8 && y > n - 9) || (x >= 20 && x <= 24 && y >= 20 && y <= 24);
     }
-    var d = "";
-    for (var y = 0; y < n; y++) for (var x = 0; x < n; x++) {
-      if (reserved(x, y)) continue;
-      var on = (y === 6 || x === 6) ? (x + y) % 2 === 0 : r() > 0.52;
-      if (on) d += "M" + x + " " + y + "h1v1h-1z";
+    /* one path per row so the code can draw itself in, top to bottom */
+    for (var y = 0; y < n; y++) {
+      var d = "";
+      for (var x = 0; x < n; x++) {
+        if (reserved(x, y)) continue;
+        var on = (y === 6 || x === 6) ? (x + y) % 2 === 0 : r() > 0.52;
+        if (on) d += "M" + x + " " + y + "h1v1h-1z";
+      }
+      if (d) svg.appendChild(svgEl("path", { d: d, fill: "#131512", class: "qr-row", style: "animation-delay:" + (1100 + y * 34) + "ms" }));
     }
-    svg.appendChild(svgEl("path", { d: d, fill: "#131512" }));
     finder(0, 0); finder(n - 7, 0); finder(0, n - 7);
     svg.appendChild(svgEl("rect", { x: 20, y: 20, width: 5, height: 5, fill: "#131512" }));
     svg.appendChild(svgEl("rect", { x: 21, y: 21, width: 3, height: 3, fill: "#EDEEE8" }));
